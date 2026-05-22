@@ -42,12 +42,13 @@ const AnimatedIcon = ({
     },
     click: { onClick: () => setIsTriggered((prev) => !prev) },
     mount: {},
+    loop: {},
   };
 
   return (
     <span
       className={`iconflow-wrapper iconflow-${animationType} ${isTriggered ? "iconflow-active" : ""} ${className}`.trim()}
-      style={{ "--iconflow-speed": `${speed}s` }}
+      style={{ "--iconflow-speed": speed }}
       {...handlers[triggerType]}
     >
       <Icon size={size} color={color} strokeWidth={strokeWidth} />
