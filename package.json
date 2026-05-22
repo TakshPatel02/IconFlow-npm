@@ -38,5 +38,13 @@
     "iconflow"
   ],
   "author": "Taksh Patel",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TakshPatel02/IconFlow-npm"
+  },
+  "homepage": "https://component-labs.vercel.app/iconflow",
+  "bugs": {
+    "url": "https://github.com/TakshPatel02/IconFlow-npm/issues"
+  }
 }
