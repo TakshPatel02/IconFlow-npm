@@ -1,0 +1,41 @@
+{
+  "name": "iconflow",
+  "version": "1.0.0",
+  "description": "Animated icon wrapper for Lucide React icons",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./styles": "./dist/styles.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build:js": "tsup",
+    "build:css": "cpx src/styles.css dist/styles.css",
+    "build": "npm run build:js && npm run build:css",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "lucide-react": ">=0.300.0",
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3"
+  },
+  "keywords": [
+    "icons",
+    "animation",
+    "lucide",
+    "react",
+    "iconflow"
+  ],
+  "license": "MIT"
+}
