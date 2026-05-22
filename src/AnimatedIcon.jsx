@@ -46,7 +46,7 @@ const AnimatedIcon = ({
 
   return (
     <span
-      className={`iconflow-${animationType} ${isTriggered ? "iconflow-active" : ""} ${className}`.trim()}
+      className={`iconflow-wrapper iconflow-${animationType} ${isTriggered ? "iconflow-active" : ""} ${className}`.trim()}
       style={{ "--iconflow-speed": `${speed}s` }}
       {...handlers[triggerType]}
     >
