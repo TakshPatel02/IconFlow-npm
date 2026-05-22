@@ -1,5 +1,8 @@
 # IconFlow
 
+[![NPM Version](https://img.shields.io/npm/v/iconflow.svg)](https://www.npmjs.com/package/iconflow)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
 IconFlow is a lightweight React wrapper for Lucide icons that adds animation triggers such as hover, click, mount, and loop.
 
 ## Install
@@ -77,7 +80,7 @@ If an unsupported animation name is passed, IconFlow falls back to `shake`.
 The package exports the animated icon component by default and also exposes the `IconFlow` helper class.
 
 ```js
-const IconFlow = require("iconflow");
+import { IconFlow } from "iconflow";
 
 const flow = new IconFlow({
   size: 32,
@@ -95,3 +98,13 @@ npm run build
 ```
 
 This builds the JavaScript bundle and copies the CSS into `dist`.
+
+## Links
+
+- **Homepage:** [Component Labs](https://component-labs.vercel.app/iconflow)
+- **Repository:** [GitHub](https://github.com/TakshPatel02/IconFlow-npm)
+- **Issues:** [GitHub Issues](https://github.com/TakshPatel02/IconFlow-npm/issues)
+
+## License
+
+MIT License © Taksh Patel
