@@ -2,6 +2,7 @@
   "name": "iconflow",
   "version": "1.2.3",
   "description": "Animated icon wrapper for Lucide React icons",
+  "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "exports": {
@@ -15,7 +16,7 @@
     "dist"
   ],
   "scripts": {
-    "build:js": "tsup",
+    "build:js": "tsup --config tsup.config.js",
     "build:css": "cpx src/styles.css dist/styles.css",
     "build": "npm run build:js && npm run build:css",
     "prepublishOnly": "npm run build"
@@ -27,8 +28,7 @@
   },
   "devDependencies": {
     "cpx": "^1.5.0",
-    "tsup": "^8.5.1",
-    "typescript": "^6.0.3"
+    "tsup": "^8.5.1"
   },
   "keywords": [
     "icons",
