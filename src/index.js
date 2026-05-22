@@ -1,4 +1,4 @@
-const AnimatedIcon = require('./AnimatedIcon.jsx')
+import AnimatedIcon from './AnimatedIcon.jsx';
 
 class IconFlow {
     constructor(options = {}) {
@@ -23,6 +23,5 @@ class IconFlow {
     }
 }
 
-module.exports = IconFlow
-module.exports.AnimatedIcon = AnimatedIcon
-module.exports.default = IconFlow
+export { AnimatedIcon, IconFlow };
+export default AnimatedIcon;
